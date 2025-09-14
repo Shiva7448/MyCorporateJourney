@@ -1,0 +1,99 @@
+﻿html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.Privacy-images {
+    height: 40px;
+    width: 40px;
+    float: none;
+    align-items: center;
+    margin: 0 0 0 0;
+}
+
+.shivam {
+    width: 20%;
+    border-radius: 2rem;
+}
+@media (max-width: 768px) {
+    .shivam {
+        width: 35%;
+        border-radius: 2rem;
+    }
+}
+
+.introduction {
+    text-indent: 2em;
+    margin-bottom: 1px;
+    text-align: justify;
+}
+
+.para {
+    text-indent: 2em;
+    margin-bottom: 1px;
+    text-align: justify;
+}
+
+.timeline {
+    position: relative;
+    margin: 50px auto;
+    padding: 20px 0;
+    width: 90%;
+    max-width: 1100px;
+}
+
+.timeline-event {
+    position: relative;
+    margin: 20px 0;
+    padding-left: 40px;
+    border-left: 3px solid #3498db;
+}
+
+    .timeline-event::before {
+        content: '';
+        position: absolute;
+        left: -10px;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+
+.timeline-content {
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.timeline-img {
+    max-width: 48%;
+    height: 25em;
+    object-fit: cover;
+    border-radius: 8px;
+}
+@media (max-width: 1000px) {
+    .timeline-img {
+        height: 200px;
+        width: 200px;
+        max-width: 48%;
+        object-fit: contain;
+        border-radius: 8px;
+    }
+}
