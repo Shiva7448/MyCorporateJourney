@@ -13,10 +13,11 @@ namespace MyCorporateJourney.Controllers
             _logger = logger;
         }
 
+
         public IActionResult Index()
         {
             List<JourneyEvent> events = new List<JourneyEvent>();
-
+            //2021
             events.Add(new JourneyEvent()
             {
                 Title = "Barcelona \u0026 Tenerife",
@@ -53,6 +54,13 @@ namespace MyCorporateJourney.Controllers
 
             events.Add(new JourneyEvent()
             {
+                Title = "Received my Laptop",
+                Description = "In the morning today, I received a message that my courier is out for delivery. For a moment, I was thinking that I haven’t ordered anything then what is coming. I asked my Maa if she or Papa has ordered anything, she said no and she remind me that it might be my laptop from WIPRO. I checked the shipment number on Delhivery website and it was my laptop. In the afternoon at around 2 PM courier person came and delivered the package. My brother was recording while I was un-boxing the package received. I have received a laptop bag, Mouse, Mouse pad, Acer 14” laptop and a note in my welcome kit. I have connected my laptop to internet and let it install necessary software. It’s an Auto Pilot laptop so I do not need to install anything manually. I have to use it from Monday for training.",
+                EventDate = new System.DateTime(2021, 10, 16)
+            });
+
+            events.Add(new JourneyEvent()
+            {
                 Title = "My first salary",
                 Description = "It was last working day of October month so it was salary day. I got my first salary from WIPRO today. I received salary for the 20 days, I spent here in training. I got a total of 17,400 rupees only. When I get notification from bank, I showed it to my parents, everyone was very happy. " +
                 "I asked both my mother and father that what they want from my first salary, both of them said that they didn’t want anything. They suggested me to keep money with me and asked me to buy whatever I want to buy for myself. I will never forget this day; it will always be one of the best days of my life.",
@@ -66,7 +74,7 @@ namespace MyCorporateJourney.Controllers
                 "There were two programming questions and 20 multiple choice questions. I started exam at 12 PM in the noon and it was for two hours. I attempted all questions. When I submitted the exam, the result came out. I received 86% in the exam and I have passed it. Now my training is over and I will be assigned a project to start work.",
                 EventDate = new System.DateTime(2021, 11, 16)
             });
-
+            //2022
             events.Add(new JourneyEvent()
             {
                 Title = "My first project in Wipro",
@@ -89,8 +97,24 @@ namespace MyCorporateJourney.Controllers
                 Description = "It’s been two weeks since I am working in this team. I have been in contact of some of people. There is one more new joiner who has joined along with me. Her name is Prathyusha Gurijala and she is from Telangana is also from Electronics engineering background. Vinod is helping us in performing daily health checks of application and other KTs, he is having more than five years of experience and is expert in mainframe. I used to call him and everyone in the team Sir or Ma’am but he make me understand that in corporate world we used to address everyone by name. " +
                 "I have known some few peoples from Unisure team. My team members are “Prathyusha Gurijala, Vinod Kumar, Neha Lidbe, Yadavalli Aishwarya, Bipul Mishra, Divya L, Dudipalla Tejashwini, Swetha Maradi and Ashok Chenchula”. Everyone is helpful and am getting a little bit help in one or other things from them to know more about daily works. There are two more people who are working from client location Arvindkumar Murugan and Rajesh Manohar. Arvind is the lead of our team and Rajesh is Database administrator.",
                 SecDescription = "A few days ago, something funny happened while I was online. I received a Teams call from an external ID, and in our training we were told to not interact with people outside the organization due to phishing attack risks. I declined the call and I cut it three times just to be safe. I asked Pravin whether I should report this incident. " +
-                "Then he said to me that Arvind is Unisure team lead, I was unaware of this till that time. Arvind was trying to add me to a Jira call to introduce me to the rest of the team. Sometimes security training and real-world scenarios collide in the most unexpected ways",
+                "Then he said to me that Arvind is Unisure team lead, I was unaware of this till that time. Arvind was trying to add me to a Jira call to introduce me to the rest of the team. Sometimes security training and real-world scenarios collide in the most unexpected ways.",
                 EventDate = new System.DateTime(2022, 02, 27)
+            });
+
+            events.Add(new JourneyEvent()
+            {
+                Title = "Working on Holi",
+                Description = "It was Holi today, a festival which we used to celebrate it with very much of joy in North India. Typically schools, colleges and offices remain closed for occasion but I was not having holiday today as my base location of work is Bangalore. My brother and my some other friends who had holiday they were teasing me. " +
+                "I was not having too much works today except application health checks and meeting to attend. I was on and off whole day, was going to kitchen talking to mother who was making delicious foods, was watching people playing children with colours. For the first time, I felt why elders worry so much about leaves and holidays who works far away from home.",
+                EventDate = new System.DateTime(2022, 03, 18)
+            });
+
+            events.Add(new JourneyEvent()
+            {
+                Title = "My first change work",
+                Description = "Since I joined Unisure team, I have been responsible for minor investigation incidents and Jira tickets and was working on daily application health check works. In the beginning of this month, I was assigned a change ticket. There is a SQL script which used to run daily in batch and used to send data to business, they had requested to add few more columns in the report. I understood the requirement from Neha and started working on it. With the help of her, I made change in script and tested it in my local environment. " +
+                "Previously, I used to think that we need to make change in code and push in repository and the work is completed. But in last few days, I learnt that we need to deploy the changes in non-prod environments, testing there various cases, take approvals from business that non-prod results are correct then only we need to go in Production. I was not even aware that there are separate environments for these stages. The deployment used to happen overnight as there will not be any active user. My first change went in production today and I marked my first contribution to Aviva code repository. ",
+                EventDate = new System.DateTime(2022, 05, 22)
             });
 
             events.Add(new JourneyEvent()
@@ -112,10 +136,10 @@ namespace MyCorporateJourney.Controllers
 
             events.Add(new JourneyEvent()
             {
-                Title = "Work in night and callout",
-                Description = "Callouttttt",
-                SecDescription = "",
-                TerDescription = "",
+                Title = "Horrible first callout memory",
+                Description = "Last week was very very difficult for me. I was added to callout rotation for the first time and Neha was secondary person. Callout means if there is any issue with application, any batch failure, any unusual alert related to CPU or memory usage then I will be primary point of contact for the whole week either it is mid night or early morning. It is also time of Navratri Puja so I have to do some house works also as my father used to have fast all nine days and my mother used to support him in all other ways, so if there is any outside work I have to manage.",
+                SecDescription = "Monday, 26th September was first day, I was about to go to sleep, then got phone call that the Unit price job has been failed. I called Neha and she helped me to resolve it. There were a few job failures that day and next day all resolved without much issue. On Wednesday night, I was involved in my first major incident. During the Vodafone mainframe team’s server upgrade, an issue arose that caused multiple job failures. On Thursday, there was again major issue where almost 30 jobs failed due to connectivity issue doing connect direct to SFG server. I had to wake up early for Puja, had to work during day and in the night, " +
+                "I was not able to sleep. I was so tired, then it came Friday night which brought more critical challenge. We had database latch issue and none of the online transactions and batch queries were able to fetch client table. On Saturday early morning, Neha escalated situation to Rajesh and Arvind to look into this issue. We were unable to fix the issue to we had to involve Microsoft support engineer, His was Mr. Tin Tin Tan, belongs to South Korea. We all (Neha, Arvind, Rajesh, Ashok, Pravin and me) were remained on call continuous for more than 24 hours. I was not doing much apart from sending email and taking notes. I was not expecting this busy week while being in on-call support.",
                 EventDate = new System.DateTime(2022, 10, 02)
             });
 
@@ -129,12 +153,13 @@ namespace MyCorporateJourney.Controllers
 
             events.Add(new JourneyEvent()
             {
-                Title = "Manager moving out",
+                Title = "Manager moving out and structural change in team",
                 Description = "Since last few weeks, Kiru was telling us that there is going to be ramp down in our team. They chosen Pravin and Shwetha for this it was last day for both of them in this project. It’s been almost a year since I am working under Pravin. He is my first manager in my corporate journey. " +
                 "I had heard that managers in office are not so good they use to scold if there is any mistake happen at work. But he was opposite, was so nice to me every time. He helped me always whenever I went to him with my silly questions. It is a bit sad that he is moving out of our team. ",
+                SecDescription= "Arvind is our new manager now and he has suggested to make few changes in our team structure. There are four new joiners who joined in last one year including me so he has one mentor to everyone. Each newbie has to report their daily works to their mentors and the mentors will clear their doubts if there is any. My mentor is Neha, Prathyusha’s mentor is Bipul, Nikhil’s mentor is Divya and Geetha’s mentor is Vinod. ",
                 EventDate = new System.DateTime(2022, 12, 30)
             });
-
+            //2023
             events.Add(new JourneyEvent()
             {
                 Title = "Second client visit",
@@ -165,9 +190,10 @@ namespace MyCorporateJourney.Controllers
             events.Add(new JourneyEvent()
             {
                 Title = "My first big development",
-                Description = "SSIS packageeee",
-                SecDescription = "",
-                TerDescription = "",
+                Description = "Since last few months, I was working on two big deployments. There was request from business that they need monthly feed of two different management information about policies so I discussed in Jira call and decided to make stored procedure and add them in batch so that it will run automatically. After deployment when went for gate-keeping to get my changes approved by senior developers, " +
+                "then Steven Dibbens rejected my changes and suggested to create new SSIS jobs and deploy them in SQL server. SSIS was a new term for me; I learnt some things from YouTube videos. Neha and Vinod had also similar tickets so Krishna Agnihotri and Arpan Biswas the senior developers gave us three days of KT to develop the package.",
+                SecDescription = "After the KT sessions also, I was struggling to get approval from GKs. They (especially Steven) were rejecting my change continuously so I directly went to him and asked for help, he drafted a very long email with different screenshots and explanations and sent it to me which helped me a lot. " +
+                "Everybody from this project used to say Steven is not a good person and he never helps but he helped me many time for these changes. Finally both of my SSIS packages are deployed in production today and this is my largest delivery so far in Unisure. I am very proud of me for the efforts I put into completing these tickets.",
                 EventDate = new System.DateTime(2023, 09, 09)
             });
 
@@ -184,9 +210,9 @@ namespace MyCorporateJourney.Controllers
                 Title = "Shifting to Bengaluru",
                 Description = "It was my last day as work from home yesterday; I was not at all in mood of moving to Bangalore. I was so sad that I didn’t work anything yesterday. I packed my bags today with all the necessary things. My mother and father were helping me reminding the different things. I was deep sad from inside but was acting normal until it was time to go to leave home. My mother started crying, after seeing her I also started crying. After some time when we get normal, my father drops me to railway station to catch train for Varanasi. ",
                 SecDescription = "Prince also came in the morning today (17th Dec) then we took flight to Bangalore and reached there at 4:30 PM. Bipul had already booked PG near to the Wipro office for us which we had decided earlier. I had never met Bipul earlier; I had just seen him on video call in team meetings. I called him when we were about to reach, He was waiting for us near the office. “Bipul was wearing blue baggy lower, white shoes, a black hooded sweat shirt with cap pulled over head & his hands and phone in pant pocket with pink wired earphones in the ear”. This was his first impression to me, one more guy was with him named Roshan Raikar he works in Protection team in Aviva. We came to PG where mine and Bipul’s room number is 205 and Prince’s will be staying in 206.",
-                EventDate = new System.DateTime(2027, 12, 16)
+                EventDate = new System.DateTime(2023, 12, 16)
             });
-
+            //2024
             events.Add(new JourneyEvent()
             {
                 Title = "New year celebration",
@@ -244,9 +270,9 @@ namespace MyCorporateJourney.Controllers
             events.Add(new JourneyEvent()
             {
                 Title = "Late night rate update",
-                Description = "",
-                SecDescription = "",
-                TerDescription = ""
+                Description = "A few days ago, I worked till 10:30 PM. I was struggling to find the RCA of one issue where settlement trigger logic was not working properly so was in call with Dilli till that time. It was longest working day since I joined Wipro and Aviva project. I had also worked till 10 PM few times for yearly statement works of SMPI project with Neha. I thought those would be busiest days of my career but today I ended up working until 11:30 PM because of a problem found in the non prod environment during mid yearly rate updates. " +
+                "Vinod had handed over this work to me, and before deployment to higher regions we had matched the data. Which initially seems ok but few things missed which lead to this issue. Bipul is currently at home recovering from Dengue he had a few weeks ago, and Vinod is also not in Bengaluru. We three were on call to make the changes, get it approved by senior developers and deploy again as we have very limited time left for Prod deployment. I didn’t have dinner today because of this so have ordered from Swiggy and am waiting for that.",
+                EventDate = new System.DateTime(2024, 06, 13)
             });
 
             events.Add(new JourneyEvent()
@@ -313,7 +339,7 @@ namespace MyCorporateJourney.Controllers
 
             events.Add(new JourneyEvent()
             {
-                Title = "Nikhil's wedding and Trip to Hampi",
+                Title = "Nikhil's wedding and trip to Hampi",
                 Description = "It’s Monday today and we are going to Nikhil’s marriage to his home town. We boarded to train from Bangalore railway station to Koppal. We worked today in office till 6 PM, then came to PG and packed our bags, booked cabs and reached station, had dinner there at a restaurant then took train which was at 10 PM. We will reach there by 8 in the morning.",
                 SecDescription = "It’s 10th December, we reached to hotel today, become fresh had breakfast in the hotel which Nikhil had already booked for us. I and some other team members had to login for work as we had not taken leave while few other had taken leave so they were just doing chit chat. During onshore hours when Neha logged in, we all logged off and had played some UNO then we dressed for engagement. Bipul, Kamal and Ashwini danced so much from our team. We took photos, had dinner and came back for rest. ",
                 TerDescription = "We woke up at 04:30 in the morning to go to Anjanadari hill and Hampi. We were 10 members who are going, Nikhil had arranged a car for us. Anjanadari is the birthplace of Hanuman Ji which is at hill top; we needed to climb 575+ steps to reach there. After spending some time there we climb down had breakfast there. We were not on leave today also so Kavya was carrying her laptop, she logged in and performed HC of application and serves. We went to visit Vittala temple and ASI ruins, Virupaksha temple, GaviSiddheshwara math etc. Nikhil marriage was early morning so we missed it and only attended the reception ceremony as we came back late from Hampi visit. In the evening, we met Nikhil when he came to hotel and we said bye to him to catch the train to reach Bangalore. ",
@@ -324,7 +350,7 @@ namespace MyCorporateJourney.Controllers
                     new JourneyEventImage() {  Src = "~/images/14.jpg" }
                 }
             });
-
+            //2025
             events.Add(new JourneyEvent()
             {
                 Title = "Vinod's last day in Unisure",
@@ -370,6 +396,44 @@ namespace MyCorporateJourney.Controllers
                 EventDate = new System.DateTime(2025, 06, 17)
             });
 
+            events.Add(new JourneyEvent()
+            {
+                Title = "Worst day of year and my birthday celebration",
+                Description = "It was one of the worst days I experienced in last few years. First incident was that Unisure change team were planning for team outing for 13th Sep, few of our team members were interested to go with them so we had nominated ourselves. Everything was planned and all set for the outing but today after our DSM call, Nowshad (Our L2 manager) declined us to go with the change team. He gave excuse that change team has separate billing and we are not supposed to go with different team member. " +
+                "That makes no sense to me as we were going out on a non working day and I was not even in the any type of the weekend activity work rotation. Second incident occurred in the evening, my father was returning to home from Varanasi after attending meeting. A very very bad incident happened with my father which left him, my mother and my whole family shaken and mentally disturbed. I am not going to mention incident as I wish to leave it behind and forget it forever. ",
+                SecDescription = "Among everything, one good thing did happen, It was my birthday on 13th so Bipul, Roshan, Tanu and Pranitha had planned celebration for me, where they had booked a restaurant for me and I celebrated birthday and cut the cake there. I didn’t fully enjoy the moment because my mind was at home recalling the incident with my father. But I truly appreciate their efforts which made me feel a bit relaxed from the whole day chaos. ",
+                EventDate = new System.DateTime(2025, 09, 12)
+            });
+
+            events.Add(new JourneyEvent()
+            {
+                Title = "Back to Bengaluru and secret santa celebration",
+                Description = "According to Wipro’s policy, employees are permitted to work from home for 30 days in a year. While most of my team members utilized this allowance in small portions, I planned strategically by combining leave days with the WFH option and extended the 30 days into more than two and a half months of working from home. I went home on 24th September and returned to Bengaluru today. I took leaves during Durga puja, Diwali and Chhath puja and applied the WFH 3 days per week on the other weeks. " +
+                "During last few months while being at home, I met almost all of my family and relatives. I attended many marriages during this period. I also went to marriage of one of my friend Neeraj and met many of college friends after couple of years. I enjoyed very well while being away from home. I still had 4 WFHs left but Bipul and Neha forced me to come back. Bipul also travelled home with me but he came back on 24th Nov so he wanted me to come back as well. Neha recently came back from England and working from Bengaluru so she was also encouraging me to return to office.",
+                SecDescription = "It’s 15th Dec today and Wipro has changed it’s policy and reduced the work from home to just 12 days. I have to plan very wisely this time.",
+                TerDescription = "Neha and other teammates were planning secret Santa fun activity on occasion of Charismas festival. Everyone had to pick a paper from bowl which will be having a name and we have to give gift to the person whose name will be in the paper. I was at home so Neha picked paper on my behalf and I got Bipul’s name When Bipul asked me whom I have to give gift, I lied and told him random name. " +
+                "I bought a full sleeve T-shirt for him. Neha also played game with me, she messaged me two days back with an Amazon link of Neckband and asking if that is good gift for Nikhil. I found today that that gift was for me. Bipul had been part of it from the start; I thought that I am lying to him but he was also playing same game to me. ",
+                EventDate = new System.DateTime(2025, 12, 10),
+                AltField = "",
+                Images = new List<JourneyEventImage>() {
+                    new JourneyEventImage() {  Src = "~/images/18.jpg" }
+                }
+            });
+
+            events.Add(new JourneyEvent()
+            {
+                Title = "Trip to Mysuru",
+                Description = "Holiday season is going on and I was trying to convince Prince, Bipul and other friends who are in Bengaluru for a trip. Prince was instantly on board, but convincing Bipul took quite a bit of effort. I suggested them Mysore which is nearly 150 KMs from our place. I booked train for four people, but one friend got some work to do so he cancelled at last moment. " +
+                "Three of us went to the trip. We boarded Shatabdi express train from KSR railway station and reached there at 1 PM. We walked more than half an hour in search of hotel to stay and choosen one which was overpriced. The hotel management provided us Bus travel to visit all the tourist places in charge of 500 rupees per person. ",
+                SecDescription = "In the evening we went to Mysore palace, It was extremely crowded, looked like everyone came for vacation. We spent some time there and came out for the bus to go for next place. We travelled an hour in the bus and reached a place named Vrindavan park. That park was having many water fountains of different style and was situated near Kaveri river dam. We came back home about 11 PM. One funny thing happened with us today, " +
+                "Bipul wanted to buy feet Sandal for his mother and when we asked auto driver, he took us to a shop. The shop was for sandal wood things and we had to spend there about 4 thousand. On 27th morning, we got ready by 8:30 and had breakfast and went to Art museum, then visited Chanmundeshwari temple on hill top and sand museum. In the evening at 4:00 we had train back to Bengaluru. We had reserved seats but train was so crowded that even we were not able to sit properly on our seats. ",
+                EventDate = new System.DateTime(2025, 12, 26),
+                AltField = "",
+                Images = new List<JourneyEventImage>() {
+                    new JourneyEventImage() {  Src = "~/images/19.jpg" }
+                }
+            });
+            //2026
             events.Add(new JourneyEvent()
             {
                 Title = "",
