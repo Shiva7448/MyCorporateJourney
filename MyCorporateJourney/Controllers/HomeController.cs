@@ -183,7 +183,7 @@ namespace MyCorporateJourney.Controllers
                 Description = "Since last few days I was working on a PowerShell script which was requested by business. The script will pick few files from a shared drive, will add some details, will merge them to one file and share the as attachment in email. I had completed the build works and had promoted till Runway region but mainframe change was not ready so " +
                 "I asked Neha and Divya that I will try to deploy it in next release as I was on leave between 1st March to 3rd March and they agreed also. Suddenly on 8th March (It was Holi and I was on leave again), Divya called me and said that my changes has been already promoted to production during last weekend.",
                 SecDescription = "When I logged in next day I had call with Vineet Rana (a config team member), Divya and Neha. Vineet suggested that the changes were missed by everyone and not to tell anyone and keep news inside as it was our fault but he told Abhishek (his manager) about it and blamed me for everything. Abhishek joined our DSM and he scolded me very badly and asked me to give plan for all other pending works before end of day. I was not able to concentrate on anything and was too much scared for whole Thursday and Friday. " +
-                "Arvind was on leave for those two days and he logged in today, I thought he will also scold me but when we had call, he listened every ting, he was too calm and not at all angry on me. I will not forget what he said to me, His words were -> “It is good news that the changes are promoted and business would not need to wait for next release, plan for other pending works and send email to business”. I feel so relaxed after 4 days and am planning to complete the remaining by this Friday.",
+                "Arvind was on leave for those two days and he logged in today, I thought he will also scold me but when we had call, he listened every thing, he was too calm and not at all angry on me. I will not forget what he said to me, His words were -> “It is good news that the changes are promoted and business would not need to wait for next release, plan for other pending works and send email to business”. I feel so relaxed after 4 days and am planning to complete the remaining by this Friday.",
                 EventDate = new System.DateTime(2023, 03, 13)
             });
 
@@ -207,7 +207,7 @@ namespace MyCorporateJourney.Controllers
 
             events.Add(new JourneyEvent()
             {
-                Title = "Shifting to Bengaluru",
+                Title = "Shifting to Bengaluru and meeting Bipul",
                 Description = "It was my last day as work from home yesterday; I was not at all in mood of moving to Bangalore. I was so sad that I didn’t work anything yesterday. I packed my bags today with all the necessary things. My mother and father were helping me reminding the different things. I was deep sad from inside but was acting normal until it was time to go to leave home. My mother started crying, after seeing her I also started crying. After some time when we get normal, my father drops me to railway station to catch train for Varanasi. ",
                 SecDescription = "Prince also came in the morning today (17th Dec) then we took flight to Bangalore and reached there at 4:30 PM. Bipul had already booked PG near to the Wipro office for us which we had decided earlier. I had never met Bipul earlier; I had just seen him on video call in team meetings. I called him when we were about to reach, He was waiting for us near the office. “Bipul was wearing blue baggy lower, white shoes, a black hooded sweat shirt with cap pulled over head & his hands and phone in pant pocket with pink wired earphones in the ear”. This was his first impression to me, one more guy was with him named Roshan Raikar he works in Protection team in Aviva. We came to PG where mine and Bipul’s room number is 205 and Prince’s will be staying in 206.",
                 EventDate = new System.DateTime(2023, 12, 16)
@@ -269,7 +269,7 @@ namespace MyCorporateJourney.Controllers
 
             events.Add(new JourneyEvent()
             {
-                Title = "Late night rate update",
+                Title = "Late night rate update work",
                 Description = "A few days ago, I worked till 10:30 PM. I was struggling to find the RCA of one issue where settlement trigger logic was not working properly so was in call with Dilli till that time. It was longest working day since I joined Wipro and Aviva project. I had also worked till 10 PM few times for yearly statement works of SMPI project with Neha. I thought those would be busiest days of my career but today I ended up working until 11:30 PM because of a problem found in the non prod environment during mid yearly rate updates. " +
                 "Vinod had handed over this work to me, and before deployment to higher regions we had matched the data. Which initially seems ok but few things missed which lead to this issue. Bipul is currently at home recovering from Dengue he had a few weeks ago, and Vinod is also not in Bengaluru. We three were on call to make the changes, get it approved by senior developers and deploy again as we have very limited time left for Prod deployment. I didn’t have dinner today because of this so have ordered from Swiggy and am waiting for that.",
                 EventDate = new System.DateTime(2024, 06, 13)
@@ -390,6 +390,18 @@ namespace MyCorporateJourney.Controllers
 
             events.Add(new JourneyEvent()
             {
+                Title = "Reunion of Jai Bhavani and Rohit's wedding",
+                Description = "I could not come home last year for Holi festival but I came his time because there was one of my college friend’s marriage also, I could attend both in one trip. There was a change to meet my Jai Bhavani gang members. We all gathered together (Prince, Abhishek Patel, Anoop, Sagar and Adithya) at Varanasi station and took bus to Sonbhadra for Rohit’s home. Rohit is first member of our group who getting married, he is going to sacrifice his life to set an example for us. " +
+                "His family believes in Buddhism so marriage happened with that rituals. We enjoyed this gathering a lot, shared good memories of lat two-three years. We went to a small trip also nearby and had bath in one of the almost dry waterfall. One funny thing happened in Rohit’s wedding. While sitting on chariot to go wedding venue, he was watching Champions Trophy final match on his mobile entire time instead of enjoying the moment. ",
+                EventDate = new System.DateTime(2025, 03, 09),
+                AltField = "Group photo at wedding venue of Rohit",
+                Images = new List<JourneyEventImage>() {
+                    new JourneyEventImage() {  Src = "~/images/23.jpg" }
+                }
+            });
+
+            events.Add(new JourneyEvent()
+            {
                 Title = "Disappointment!!!!!",
                 Description = "Our appraisal ratings came out today. I received only 4 stars instead of five which I was expecting. I am disappointed with this but I know it will not be going to change whatever I do. In last three months, I have worked and deployed four changes to production without any issue. In those four changes two are related to C sharp code fixes (Switching issue & Bliss screen logic change), one was new a Power Shell script to housekeep the older files from DFS server and one was new SQL related SSIS package. And currently working on one more change and planning to deploy within one month. Despite successfully delivering multiple projects across different technologies, I still didn’t receive full ratings. There is similar case with Bipul, he has also delivered three changes and working on two major changes which will be deployed in few days still he received 4. " +
                 "I heard from a colleague that four people from our team got five stars, even though some of them contributed far less than Bipul and me. If we compare with all teams none of the team has delivered more than two changes in last quarter and alone from NopHelp, we three people have promoted eight changes with any production issue. And what did I get for those efforts? a 300-rupee Winner Circle reward, nothing else. One more thing, I have been working in this project sine more than three years, completed all eligibility criteria and still HR told me I’m not even eligible for a promotion. There are some people who are getting promoted without working anything.  One of my friends quote is being true here that ‘looking busy often matters more than actually working hard’. I am really not happy from these things going on in our project.",
@@ -407,7 +419,23 @@ namespace MyCorporateJourney.Controllers
 
             events.Add(new JourneyEvent()
             {
-                Title = "Back to Bengaluru and secret santa celebration",
+                Title = "Spirit of Wipro run 2025",
+                Description = "Wipro use to conduct marathon and spirit run every year in September month for Wipro care and Azim Premji foundation which supports education and health care for children and disadvantaged communities. I wanted to join last year but went home for festival so couldn’t join, but I registered this year and forced Bipul also to register for it. We registered for just 5 KM of run. I woke up at 6 AM and make Bipul and Nishant also to get up, we all took cab and reached the venue. At around 9 spirit of Wipro run started, there were many people who participated in this program. We completed the run in almost 45 minutes, there were too much crowd so we barely got change to run, were just walking fast. After race, we collected the medals and there was food also which we enjoyed we came empty stomach for this",
+                SecDescription = "Similar to last year, again I have save all my leaves and work from home for this year’s festival season. I will go home will take frequent leaves and will use WFH wisely and will come back after 2 months. I have booked flight for 24th Sep, will work two days from office. Bipul is also coming with me to Varanasi, he will visit temple and then take train from there. One more thing I wanted to share that there was client visit last week and I received certificate for better works and achievements. John Brammer, David booth and Simon Sinfield had visited India this time.",
+                EventDate = new System.DateTime(2025, 09, 21),
+                AltField = "Photo after run and client visit",
+                Images = new List<JourneyEventImage>() {
+                    new JourneyEventImage() {  Src = "~/images/24.jpg" },
+                    new JourneyEventImage() {  Src = "~/images/25.jpg" }
+                },
+                Actions = new List<JourneyEventAction>() {
+                    new JourneyEventAction() { Text = "More about Spirit of Wipro run 2025", Url="https://www.wipro.com/newsroom/press-releases/2025/spirit-of-wipro-run-celebrates-historic-20th-edition-run-by-bringing-together-over-62000-participants-worldwide/" }
+                }
+            });
+
+            events.Add(new JourneyEvent()
+            {
+                Title = "Back to Bengaluru and secret Santa celebration",
                 Description = "According to Wipro’s policy, employees are permitted to work from home for 30 days in a year. While most of my team members utilized this allowance in small portions, I planned strategically by combining leave days with the WFH option and extended the 30 days into more than two and a half months of working from home. I went home on 24th September and returned to Bengaluru today. I took leaves during Durga puja, Diwali and Chhath puja and applied the WFH 3 days per week on the other weeks. " +
                 "During last few months while being at home, I met almost all of my family and relatives. I attended many marriages during this period. I also went to marriage of one of my friend Neeraj and met many of college friends after couple of years. I enjoyed very well while being away from home. I still had 4 WFHs left but Bipul and Neha forced me to come back. Bipul also travelled home with me but he came back on 24th Nov so he wanted me to come back as well. Neha recently came back from England and working from Bengaluru so she was also encouraging me to return to office.",
                 SecDescription = "It’s 15th Dec today and Wipro has changed it’s policy and reduced the work from home to just 12 days. I have to plan very wisely this time.",
@@ -436,11 +464,34 @@ namespace MyCorporateJourney.Controllers
             //2026
             events.Add(new JourneyEvent()
             {
+                Title = "Shifting to New PG",
+                Description = "I came back from home today, sorry not home but Kolkata. I went there on 14th Feb for my elder cousin’s marriage. His marriage was on 20th so all of my family members came there from home and I went from here. This time I didn’t come back in GSS Elite PG. We (me and Bipul) have betrayed them and took new PG to stay. I gave them excuse that I have changed my work location to Noida and will not come back to Bengaluru so I have to vacate the PG.  Some days back, Bipul asked me that there is a new PG opening which is giving room with balcony in lower price. " +
+                "We went there and saw the rooms. Bipul was eagerly convincing me to move there, he was giving me few reasons. Deep down, I knew his real motivation was to stay closer to his girlfriend, so I eventually agreed to shift as well. There are two major drawbacks for me to live in this new PG. One is that it is about 1 Km from our office and there are no shops, I have to think twice to go out if I need to buy anything here and second one is the beds are a bit smaller than the ones in older PG. ",
+                EventDate = new System.DateTime(2026, 03, 01)
+            });
+
+            events.Add(new JourneyEvent()
+            {
+                Title = "Mangaluru trip with colleague",
+                Description = "Our project team colleagues were planning to have a weekend trip to some place. Initially, they decided on Wayanad, but later changed the destination to Mangaluru. They asked me also if I am interested and I said yes. They also invited Bipul but he declined saying he has another plan, even though he was not having anything. The plan was to start journey on Friday night after office hours and return on late Sunday night. We had booked a bus for 26 of us (Me, Dilli, Ashwini and Venky from my team, other people from change team, Manager Kiru and JP) and started from office at around 11 PM, reached Mangalore at 7 AM today. " +
+                "We have reserved a resort near the beach. After freshing up, had banana and bread-butter-jam as breakfast which we brought along with us and then boarded to bus again and visited the most famous Shree Manjunatha Temple, we worshiped and had lunch in the temple. Then we went to a museum named St Aloysius museum which was having many old collectibles including different currencies, postal stamps, weapons, cameras and vintage machines. In afternoon, we went to Panambur beach, the Sun was blazing overhead and humidity was making it worse still we stayed there till sunset. We played in water for long and enjoyed a lot.",
+                SecDescription = "It’s Sunday today and we checked out of resort in early morning and moved towards Shakhleshpura to visit Shri Subrahmanya Temple. It was around 120 KM from our starting point and the views during the journey were amazing. Bus was running in hairpin road of ghat and there was high hill one side and low trench on other side. In the whole journey of bus everyone was jumping and dancing in the bus on songs of different languages.  We visited temple at around 11 AM, there was too much crowd, we had to be in queue for an hour and there is a rule here that all males have to take off his shirt and vests before entering the temple. " +
+                "It is believed that if you make a wish there with a sincere heart, it will come true. After visiting temple, we again get in the bus and reached to Abbey waterfalls, there was not much water due to summer but all of us get in the water and spent good time there.  When it was about to become dark and we were not coming out of water then Kiru started blackmailing us that he will throw everyone’s phone one by one in water which we handed over to him before entering water. We then started our journey back to Bangalore after having dinner and reached here at around 4 AM in the morning. It was overall a better than any trip which I had after moving to Bengaluru. ",
+                EventDate = new System.DateTime(2026, 04, 18),
+                AltField = "Group photo",
+                Images = new List<JourneyEventImage>() {
+                    new JourneyEventImage() {  Src = "~/images/20.jpg" },
+                    new JourneyEventImage() {  Src = "~/images/21.jpg" }
+                }
+            });
+
+            events.Add(new JourneyEvent()
+            {
                 Title = "",
                 Description = "",
                 SecDescription = "",
                 TerDescription = "",
-                EventDate = new System.DateTime(2024, 10, 11),
+                EventDate = new System.DateTime(2026, 10, 11),
                 AltField = "",
                 Images = new List<JourneyEventImage>() {
                     new JourneyEventImage() {  Src = "~/images/1.jpg" }
@@ -456,7 +507,7 @@ namespace MyCorporateJourney.Controllers
                 Description = "",
                 SecDescription = "",
                 TerDescription = "",
-                EventDate = new System.DateTime(2024, 10, 11),
+                EventDate = new System.DateTime(2025, 10, 11),
                 AltField = "",
                 Images = new List<JourneyEventImage>() {
                     new JourneyEventImage() {  Src = "~/images/1.jpg" }
@@ -472,7 +523,7 @@ namespace MyCorporateJourney.Controllers
                 Description = "",
                 SecDescription = "",
                 TerDescription = "",
-                EventDate = new System.DateTime(2024, 10, 11),
+                EventDate = new System.DateTime(2025, 10, 11),
                 AltField = "",
                 Images = new List<JourneyEventImage>() {
                     new JourneyEventImage() {  Src = "~/images/1.jpg" }
@@ -488,7 +539,39 @@ namespace MyCorporateJourney.Controllers
                 Description = "",
                 SecDescription = "",
                 TerDescription = "",
-                EventDate = new System.DateTime(2024, 10, 11),
+                EventDate = new System.DateTime(2025, 10, 11),
+                AltField = "",
+                Images = new List<JourneyEventImage>() {
+                    new JourneyEventImage() {  Src = "~/images/1.jpg" }
+                },
+                Actions = new List<JourneyEventAction>() {
+                    new JourneyEventAction() { Text = "", Url="" }
+                }
+            });
+
+            events.Add(new JourneyEvent()
+            {
+                Title = "",
+                Description = "",
+                SecDescription = "",
+                TerDescription = "",
+                EventDate = new System.DateTime(2025, 10, 11),
+                AltField = "",
+                Images = new List<JourneyEventImage>() {
+                    new JourneyEventImage() {  Src = "~/images/1.jpg" }
+                },
+                Actions = new List<JourneyEventAction>() {
+                    new JourneyEventAction() { Text = "", Url="" }
+                }
+            });
+            //2027
+            events.Add(new JourneyEvent()
+            {
+                Title = "",
+                Description = "",
+                SecDescription = "",
+                TerDescription = "",
+                EventDate = new System.DateTime(2025, 10, 11),
                 AltField = "",
                 Images = new List<JourneyEventImage>() {
                     new JourneyEventImage() {  Src = "~/images/1.jpg" }
