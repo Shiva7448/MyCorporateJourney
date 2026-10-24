@@ -40,6 +40,21 @@ body {
     }
 }
 
+.intro {
+    position: relative;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 10px 20px -2px rgba(0, 0, 0, 0.2), 0 25px 35px -5px rgba(0, 0, 0, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s ease;
+}
+
+    .intro:hover {
+        transform: translateY(-6px) scale(1.01);
+        box-shadow: 0 8px 12px -2px rgba(0, 0, 0, 0.12), 0 18px 28px -4px rgba(0, 0, 0, 0.25), 0 35px 45px -5px rgba(0, 0, 0, 0.35);
+    }
+
 .introduction {
     text-indent: 2em;
     margin-bottom: 1px;
@@ -52,9 +67,10 @@ body {
     text-align: justify;
 }
 
+
 .timeline {
     position: relative;
-    margin: 50px auto;
+    margin: 10px auto;
     padding: 20px ;
     width: 90%;
     max-width: 1100px;
@@ -72,21 +88,19 @@ body {
     padding-left: 40px;
 }
 
-    .timeline-event::before {
-        content: "";
-        position: absolute;
-        width: 50%;
-        border: solid orangered;
-        left: 0px;
-        top: -4.5px;
-        bottom: -4.5px;
-        border-width: 0 0 5px 5px;
-        border-radius: 0 0 0 50px;
-    }
-
 .timeline-content {
-    padding: 15px;
-    border-radius: 8px;
+    padding: 25px;
+    background: #B7FF72;
+    color: #333;
+    border-radius: 2px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.12);
+    transform: rotate(-1deg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-event:nth-child(even) .timeline-content {
+    transform: rotate(1deg);
+    background: #B7FF72;
 }
 
 .timeline-img {
@@ -105,15 +119,48 @@ body {
     }
 }
 
-/* Orange dot for timeline*/
+/*CSS for side view of sticky notes
 .timeline-title::before {
     content: "";
     position: absolute;
-    width: 25px;
-    height: 25px;
-    background: white;
-    border-radius: 50%;
-    border: 8px solid orangered;
-    left: -10px;
-    top: 20px;
+    width: 14px;
+    height: 18px;
+    background: #ff4500;
+    border-radius: 4px 4px 2px 2px;
+    background-image: linear-gradient( to bottom, #ff7340 0%, #ff4500 30%, #b33000 35%, #ff5722 45%, #d83b01 90%, #661d00 100% );
+    left: 45px;
+    top: 10px;
+    z-index: 10;
+    transform: rotate(-15deg);
+    box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.45), inset -1px 0 3px rgba(0, 0, 0, 0.3), inset 1px 0 2px rgba(255, 255, 255, 0.5);
+}
+
+.timeline-title::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 8px;
+    background: linear-gradient(to right, #ccc, #999);
+    left: 51px;
+    top: 26px;
+    z-index: 9;
+    transform: rotate(-15deg);
+    opacity: 0.8;
+}
+*/
+
+
+.timeline-title::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-image: url('/images/pin.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 40px;
+    top: -5px;
+    z-index: 10;
+    filter: drop-shadow(3px 5px 4px rgba(0, 0, 0, 0.3));
 }
