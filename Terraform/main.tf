@@ -1,7 +1,7 @@
 provider "aws" {
   region = "ap-south-1"
-  access_key = "AKIA4MTWMJJZWRNEOBTW"
-  secret_key = "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"
+  access_key = "abc"
+  secret_key = "xyz"
 }
 
 module "eks" {
