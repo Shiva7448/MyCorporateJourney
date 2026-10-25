@@ -1,0 +1,52 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mycorporatejourney-deployment
+  labels:
+    app: mycorporatejourney
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: mycorporatejourney
+  template:
+    metadata:
+      labels:
+        app: mycorporatejourney
+    spec:
+      nodeSelector:
+        kubernetes.io/os: windows
+      tolerations:
+      - key: "os"
+        operator: "Equal"
+        value: "windows"
+        effect: "NoSchedule"
+      containers:
+      - name: mycorporatejourney-web
+        image: 851725535859.dkr.ecr.ap-south-1.amazonaws.com/mycorporatejourney:latest
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            cpu: "500m"
+            memory: "1Gi"
+          limits:
+            cpu: "1000m"
+            memory: "2Gi"
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: mycorporatejourney-service
+  labels:
+    app: mycorporatejourney
+spec:
+  type: LoadBalancer
+  selector:
+    app: mycorporatejourney
+  ports:
+    - protocol: TCP
+      port: 80        
+      targetPort: 80
