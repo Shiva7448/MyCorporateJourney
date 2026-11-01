@@ -487,17 +487,66 @@ namespace MyCorporateJourney.Controllers
 
             events.Add(new JourneyEvent()
             {
-                Title = "",
-                Description = "",
-                SecDescription = "",
-                TerDescription = "",
-                EventDate = new System.DateTime(2026, 10, 11),
-                AltField = "",
+                Title = "Toughest MIT till now",
+                Description = "We (Bipul and me) worked in office today and came back to PG by 07:30 PM. Neha called me and told that there is an MIT going on and she wanted Bipul to login. I informed him and then after talking with my mother for few minutes, I also logged in. The issue was there was very high response time for few services. They tried to kill hung few user sessions but still it didn’t work. It was getting worse none of online transactions were getting success, they had involved Arvind, Raj and Krishna also to investigate. " +
+                "I and Bipul investigated and found that there is issue with one of WCF service which was causing high CPU usage of SQL server. After discussing our findings with everyone, we decided to halt all services and swap the SQL server. Neha and I logged into every server and stopped the services and application pools then Vikas did failover of server, then we started all services. Completing all these steps it was already 2 AM and we didn’t had dinner, I ate the snacks which I was having and then, went to sleep. It was one of craziest high severity incident in last few years.  ",
+                EventDate = new System.DateTime(2026, 05, 14)
+            });
+
+            events.Add(new JourneyEvent()
+            {
+                Title = "A shoutout to office friends",
+                Description = "I have spent more than two years in Bangalore, I have collected so many memories and came across many people, only a few have remained in touch. First one is Bipul, whom I know since the first day, he is still my roommate and constant companion throughout the journey. We use to work together on all the works assigned either to him or me, we deal with them together. We mostly hangout together apart from work, sometimes, we rents two scooty and went to day trip to a waterfall and once to HAL museum and once to a temple. However, he has got other priority these days, he barely be in his room, I will better not go in depth of that.",
+                SecDescription = "Anand and Subbiah are two of the colleagues who made my time in Bangalore much more enjoyable. They both are from Quotes team, both of them are 6+ feet tall and bulky body, almost look like twins. I become friend of Subbiah because of Badminton, we use to play almost every weekend. Anand is my friend since he was living in PG and he is one of the most comic people I ever met. They both are package of fun, always cracking jokes and laughing in the office. We used to go for lunch and coffee breaks together and whenever there is client holiday, Subbiah took his car and we go outside of office for lunch, short drive and fun.",
+                TerDescription = "Roshan and Tanu, they both become my friends through Bipul. They were his friend first but overtime we developed our friendship also. We use to have fun in and outside office. We mostly use to gossip about office politics. Both of them are victim of a very strict lady manager. I also want to mention Pranitha, Joyal, Vishal, Nikhil and Pavan who has been nice to me every time.",
+                EventDate = new System.DateTime(2026, 05, 17),
+                AltField = "Onam celebration photo",
                 Images = new List<JourneyEventImage>() {
-                    new JourneyEventImage() {  Src = "~/images/1.jpg" }
-                },
-                Actions = new List<JourneyEventAction>() {
-                    new JourneyEventAction() { Text = "", Url="" }
+                    new JourneyEventImage() {  Src = "~/images/26.jpg" }
+                }
+            });
+
+            events.Add(new JourneyEvent()
+            {
+                Title = "Passing of my grandfather & Bipul went OnSite",
+                Description = "Today, I came back to Bangalore from home after almost one and half month. The last two months were very sad and struggling for my family. My grandfather passed away on 18th June. He was fit and well till 3rd June, when an accident happened with him. He had gone to market and it was very hot that day. He was sitting on stairs to have some rest and when stood up after sometime, he lost his control and fell, his neck bone was fractured and since then he was admitted in ICU in a hospital in Varanasi. My father, mother, brother, grandmother and other family members were staying in the hospital without proper sleep and food. I went to see him for few days in between and when I was returning, his last word to me was –“Ghar se kaam nahi kar sakte kuchh aur din (Cannot you do work from home for few more days)”, I could not talk to him after that. " +
+                "On 18th June morning, Doctors said that medicine is not working on him, and we can take him to home and same day evening he passed away. We had the Shradhanjali gathering on 2nd July. I was working from home and took few leaves in between those days. There was no sign of happiness in my family since 3rd June, but things are getting better and we hope to fully return to our normal routine over the coming days.",
+                SecDescription = "One good thing happened this month, my roommate, my teammate and friend Bipul got opportunity to work from Onsite. He went to Norwich, England on 10th of this month and will be working from there for a year. He was manifesting for it since I joined the team, he got this opportunity after Neha and Dilli returned back to India.",
+                EventDate = new System.DateTime(2026, 07, 25),
+                AltField = "my grandfather's photo",
+                Images = new List<JourneyEventImage>() {
+                    new JourneyEventImage() {  Src = "~/images/22.jpg" }
+                }
+            });
+
+            events.Add(new JourneyEvent()
+            {
+                Title = "Aviva meet 2026",
+                Description = "Similar to last year, Aviva meet was organized this year also. It started on 5th of this month with desk decoration event with the theme of Independence day and completed recently. There was client visit today so award was given to winners. Like last time, I had participated in Cricket, Badminton and Chess events. I was defending champion but could not do better in Badminton this time, I lost in second knockout game. We won in Cricket again and remained unbeaten in the tournament again. Last year, I was brutally defeated in first match of Chess, but this time I came back stronger and reached final. I lost in final because of one mistake done by me. I was completely winning for whole game, then did a blunder in the end. I secured the runner-up title and Sai Dinesh from Protection team won in the Chess.  It hurts to lose a game you know you could have won, but it also feels rewarding to see how far you've come in a year. Overall, the event was very enjoyable and refreshing break from work within office.",
+                EventDate = new System.DateTime(2026, 08, 26),
+                AltField = "Cricket winner team",
+                Images = new List<JourneyEventImage>() {
+                    new JourneyEventImage() {  Src = "~/images/27.jpg" }
+                }
+            });
+
+            events.Add(new JourneyEvent()
+            {
+                Title = "My Birthday",
+                Description = "It was my third birthday today in Bangalore. There was nothing planned, I slept on my usual time yesterday, which is before 11 PM. Roshan called me around 11:50 PM and asked me to come down. I sensed they have planned something. Tanu, Roshan and Sneha had come with cake and gift to my PG. When clock hit 12 AM, I cut the cake and celebrated the birthday, Bipul was also on call that time. As usual, I received a call from my brother right around the same time, and we spoke for a few minutes. After taking few pictures and celebrating, they went to their PG and I came back to my room. In the early morning, I went to a nearby temple and spent whole day staying in PG only and talking to family and friends over call. To end the day, we (Roshan, Tanu, Sneha and Pranitha) went to a restaurant and had a dinner party.",
+                EventDate = new System.DateTime(2026, 09, 13)
+            });
+
+            events.Add(new JourneyEvent()
+            {
+                Title = "Wipro run 2026 & Delhi trip",
+                Description = "It was Spirit of Wipro Run 2026 today, I woke up early and got ready for event. I went to the office and teamed up with Anand, Subbiah and Tanu there and reached to venue. We completed the run, collected our medal and had the delicious breakfast. I came back to my PG by 1 PM, had some rest and I packed my bags for trip to Delhi. I am writing this paragraph from airport while waiting for my flight, which is scheduled for midnight 3 and will reach Delhi at 5:30 in the morning. My college friend Prateek was calling me since more than a year so I am going to meet him.",
+                SecDescription = "It’s 5th October today. Before agreeing to visit Prateek, I had one condition: he had to plan a trip for us and he had accepted it. He kept his promise and planned a long weekend trip for Himachal Pradesh. There were five people on this trip, including Arshad and Saurabh, who are my college friends, and Paras, who is Prateek's colleague from the office. We started our journey from Delhi on 1st October and came back today early morning. In this trip we visited Jibhi town in Kullu district, Jalori pass, did trekking and camping on hilltop. It was a wonderful experience. Prateek did a great job to keep me on his flat, he took me to enjoy some good Delhi street foods. I am going back to Bangalore on 7th and hoping to meet him again on his marriage which is in March next year.",
+                EventDate = new System.DateTime(2026, 09, 27),
+                AltField = "spirit run and Jibhi photo",
+                Images = new List<JourneyEventImage>() {
+                    new JourneyEventImage() {  Src = "~/images/28.jpg" },
+                    new JourneyEventImage() {  Src = "~/images/29.jpg" }
                 }
             });
 
@@ -517,53 +566,6 @@ namespace MyCorporateJourney.Controllers
                 }
             });
 
-            events.Add(new JourneyEvent()
-            {
-                Title = "",
-                Description = "",
-                SecDescription = "",
-                TerDescription = "",
-                EventDate = new System.DateTime(2025, 10, 11),
-                AltField = "",
-                Images = new List<JourneyEventImage>() {
-                    new JourneyEventImage() {  Src = "~/images/1.jpg" }
-                },
-                Actions = new List<JourneyEventAction>() {
-                    new JourneyEventAction() { Text = "", Url="" }
-                }
-            });
-
-            events.Add(new JourneyEvent()
-            {
-                Title = "",
-                Description = "",
-                SecDescription = "",
-                TerDescription = "",
-                EventDate = new System.DateTime(2025, 10, 11),
-                AltField = "",
-                Images = new List<JourneyEventImage>() {
-                    new JourneyEventImage() {  Src = "~/images/1.jpg" }
-                },
-                Actions = new List<JourneyEventAction>() {
-                    new JourneyEventAction() { Text = "", Url="" }
-                }
-            });
-
-            events.Add(new JourneyEvent()
-            {
-                Title = "",
-                Description = "",
-                SecDescription = "",
-                TerDescription = "",
-                EventDate = new System.DateTime(2025, 10, 11),
-                AltField = "",
-                Images = new List<JourneyEventImage>() {
-                    new JourneyEventImage() {  Src = "~/images/1.jpg" }
-                },
-                Actions = new List<JourneyEventAction>() {
-                    new JourneyEventAction() { Text = "", Url="" }
-                }
-            });
             //2027
             events.Add(new JourneyEvent()
             {
