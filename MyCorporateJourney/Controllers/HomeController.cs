@@ -498,7 +498,7 @@ namespace MyCorporateJourney.Controllers
                 Title = "A shoutout to office friends",
                 Description = "I have spent more than two years in Bangalore, I have collected so many memories and came across many people, only a few have remained in touch. First one is Bipul, whom I know since the first day, he is still my roommate and constant companion throughout the journey. We use to work together on all the works assigned either to him or me, we deal with them together. We mostly hangout together apart from work, sometimes, we rents two scooty and went to day trip to a waterfall and once to HAL museum and once to a temple. However, he has got other priority these days, he barely be in his room, I will better not go in depth of that.",
                 SecDescription = "Anand and Subbiah are two of the colleagues who made my time in Bangalore much more enjoyable. They both are from Quotes team, both of them are 6+ feet tall and bulky body, almost look like twins. I become friend of Subbiah because of Badminton, we use to play almost every weekend. Anand is my friend since he was living in PG and he is one of the most comic people I ever met. They both are package of fun, always cracking jokes and laughing in the office. We used to go for lunch and coffee breaks together and whenever there is client holiday, Subbiah took his car and we go outside of office for lunch, short drive and fun.",
-                TerDescription = "Roshan and Tanu, they both become my friends through Bipul. They were his friend first but overtime we developed our friendship also. We use to have fun in and outside office. We mostly use to gossip about office politics. Both of them are victim of a very strict lady manager. I also want to mention Pranitha, Joyal, Vishal, Nikhil and Pavan who has been nice to me every time.",
+                TerDescription = "Roshan and Tanu, they both become my friends through Bipul. They were his friend first but overtime we developed our friendship also. We use to have fun in and outside office. We mostly use to gossip about office politics. Both of them are victim of a very strict lady manager. I also want to mention Nikhil , Sneha, Pranitha, Joyal, Vishal and Pavan who has been nice to me every time. ",
                 EventDate = new System.DateTime(2026, 05, 17),
                 AltField = "Onam celebration photo",
                 Images = new List<JourneyEventImage>() {
@@ -552,18 +552,10 @@ namespace MyCorporateJourney.Controllers
 
             events.Add(new JourneyEvent()
             {
-                Title = "",
-                Description = "",
-                SecDescription = "",
-                TerDescription = "",
-                EventDate = new System.DateTime(2025, 10, 11),
-                AltField = "",
-                Images = new List<JourneyEventImage>() {
-                    new JourneyEventImage() {  Src = "~/images/1.jpg" }
-                },
-                Actions = new List<JourneyEventAction>() {
-                    new JourneyEventAction() { Text = "", Url="" }
-                }
+                Title = "Relocation to Noida",
+                Description = "I have been working in Bangalore for almost three years. Recently, I heard that WIPRO is planning for five days work from office from next year which will not allow we north Indian employees including me to go home for long time. When I came to Bangalore there was ODC only here and Pune but now we have in Noida and Hyderabad also. Few days back, I was feeling bored in office as all of the friends went to hometown for festival season so thought to talk to manager for location change. Coincidentally, Nikhil also suggested me to do same while we went for lunch on day. I talked to Neha first, told her few reasons, she agreed and asked me to contact Nowshad. " +
+                "I messaged Nowshad and he also agreed, then I talked to HR, they didn’t give any response but I raised relocation request from WIPRO portal and Nowshad approved it and my location is change now to Greater Noida. I will be going home on 29th of this month, I will vacate the PG and will carry all of my luggage to home. Then from next year, I will work from Noida, which is nearer to my home compared to Noida so can go home anytime and will not be bored there as there are many of friends live in Gurugram, Delhi and Noida.",
+                EventDate = new System.DateTime(2026, 11, 19)
             });
 
             //2027
